@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Натуральне мило ручної роботи. Тільки найкращі і безпечні інгрідієнти. Заходь та замовляй просто зараз! "
+    />
+    <title>Мило ручної роботи</title>
+  </head>
+  <body style="background: #f4f4f4">
+    <!-- Header -->
+    <header>
+      <h1>МАЙСТЕРНЯ КРАФТОВОГО МИЛА ЮЛІЇ МАЛЄЄВОЇ</h1>
+      <h2>&hearts; Крапелька магії у кожному виробі!</h2>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+      <a href="#products">Товари</a>
+      <a href="#order">Оформити замовлення</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+
+    <!-- Information article -->
+    <article>
+      <h2>ПРО МЕНЕ</h2>
+
+      <div>
+        <img
+          src="images/photo.jpg"
+          width="200"
+          alt="Юлія Малєєва"
+          title="Юлія Малєєва"
+        />
+        <p>
+          Привіт! Мене звати Юля! З 2020 року я займаюся виготовленням
+          ароматного мила ручної роботи і отримую від цього неймовірне
+          задоволення.
+        </p>
+        <p>
+          Моя продукція не тільки дбайливо очистить шкіру, а й занурить тебе у
+          світ чарівних фантазій!
+        </p>
+        <i>Огорни себе любов'ю!</i>
+      </div>
+    </article>
+
+    <br />
+    <hr />
+
+    <!-- Main block -->
+    <main>
+      <!-- Products section -->
+      <section id="products">
+        <h2>ТОВАРИ</h2>
+
+        <article>
+          <h4>Мило "Свіжість кавуна"</h4>
+          <figure>
+            <img
+              src="images/milo-kavun-42368423114754.jpg"
+              width="100"
+              alt="Мило з ароматом кавуна"
+              title="Мило з ароматом кавуна"
+            />
+          </figure>
+          <p>
+            Яскраве та ароматне літнє мило. Делікатно відлущує епідерміс та
+            пом'якшує шкіру.
+          </p>
+          <small><b>Ціна: 150 грн.</b></small>
+        </article>
+
+        <br />
+
+        <article>
+          <h4>Мило "Пряний апельсин"</h4>
+          <figure>
+            <img
+              src="images/milo-pryaniy-apelsin-39630977615439.jpg"
+              width="100"
+              alt="Мило з ароматом апельсина"
+              title="Мило з ароматом апельсина"
+            />
+          </figure>
+          <p>
+            Миттєво розслабляє та тонізує шкіру, покращує кровообіг. Створює
+            новорічну атмосферу.
+          </p>
+          <small><b>Ціна: 180 грн.</b></small>
+        </article>
+
+        <br />
+
+        <article>
+          <h4>Мило "Вишнева насолода"</h4>
+          <figure>
+            <img
+              src="images/milo-vishnya-v-shokoladi-57660318001028.jpg"
+              width="100"
+              alt="Мило з ароматом вишні"
+              title="Мило з ароматом вишні"
+            />
+          </figure>
+          <p>
+            Це апетитне мило подбає про зволоження вашої шкіри. Продукт
+            виготовлений виключно з натуральних інгрідієнтів.
+          </p>
+          <small><b>Ціна: 200 грн.</b></small>
+        </article>
+
+        <br />
+
+        <article>
+          <h4>Мило "Малинова феєрія"</h4>
+          <figure>
+            <img
+              src="images/milo-malina-z-vershkami-92983451088124.jpg"
+              width="100"
+              alt="Мило з ароматом малини"
+              title="Мило з ароматом малини"
+            />
+          </figure>
+          <p>
+            Ніжне мило з легким ароматом малини. Підходить для чутливої та
+            дитячої шкіри.
+          </p>
+          <small><b>Ціна: 120 грн.</b></small>
+        </article>
+
+        <br />
+      </section>
+
+      <hr />
+
+      <!-- Order section -->
+      <section id="order">
+        <h2>ОФОРМИТИ ЗАМОВЛЕННЯ</h2>
+        <form action="">
+          <div>
+            <label for="name">Ім'я та прізвище:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введіть ваше ім'я та прізвище"
+              size="30"
+              required
+            />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="city">Місто:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Введіть ваше місто"
+              size="30"
+              required
+            />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="phone">Контактний телефон:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Введіть ваш номер телефону"
+              size="30"
+              required
+            />
+          </div>
+
+          <div>
+            <h4>Оберіть спосіб доставки:</h4>
+            <div>
+              <input
+                type="radio"
+                id="post"
+                name="delivery"
+                value="post"
+                checked
+              />
+              <label for="post">Нова Пошта</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="courier"
+                name="delivery"
+                value="courier"
+              />
+              <label for="courier">Кур'єр</label>
+            </div>
+          </div>
+
+          <div>
+            <h4>Оберіть товар:</h4>
+
+            <div>
+              <input type="number" id="watermelon" name="watermelon" max="5" />
+              <label for="watermelon">Свіжість кавуна</label>
+            </div>
+
+            <div>
+              <input type="number" id="orange" name="orange" max="5" />
+              <label for="orange">Пряний апельсин</label>
+            </div>
+
+            <div>
+              <input type="number" id="cherry" name="cherry" max="5" />
+              <label for="cherry">Вишнева насолода</label>
+            </div>
+
+            <div>
+              <input type="number" id="raspberry" name="raspberry" max="5" />
+              <label for="raspberry">Малинова феєрія</label>
+            </div>
+          </div>
+
+          <br />
+
+          <button type="submit">Замовити</button>
+        </form>
+        <br />
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer id="contacts">
+      <h2>КОНТАКТИ</h2>
+      <div>
+        <p>
+          <b>Телефон:</b>
+          063-48-07-349
+        </p>
+      </div>
+      <div>
+        <p>
+          <b>Email:</b>
+          <a href="mailto:iqeen94@gmail.com" target="_blank"
+            >iqeen94@gmail.com</a
+          >
+        </p>
+      </div>
+      <div>
+        <p>
+          <b>Соціальні мережі:</b>
+          <a
+            href="https://www.facebook.com/profile.php?id=100007763173193"
+            target="_blank"
+            >Facebook</a
+          >
+        </p>
+      </div>
+      <div>
+        <figure>
+          <img src="images/logo.png" width="50" alt="Логотип" title="Логотип" />
+        </figure>
+        <small>&copy; Всі права захищені</small>
+      </div>
+    </footer>
+  </body>
+</html>
