@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Тіндер є одним із найпопулярніших застосунків для знайомств у світі. На сьогоднішній день він нараховує близько 10 мільйонів користувачів."
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Тіндер | Реєстрація</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="site-name">
+        <img src="assets/images/logo.svg" width="50" />
+        <h1>Вітаємо у Тіндер!</h1>
+      </div>
+      <p>
+        <b>Мрієш зустріти свою половинку? Реєструйся на нашому сайті!</b>
+      </p>
+    </header>
+
+    <!-- Main block with registration form -->
+    <main>
+      <form action="" method="post">
+        <!-- Create profile -->
+        <section class="account-section">
+          <h3>Крок 1: Створи свій акаунт</h3>
+
+          <br />
+
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="fname"><b>Ім'я:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    size="12"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="lname"><b>Прізвище:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    size="12"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label><b>Стать:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    required
+                  />
+                  <label for="male">чоловік</label>
+
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">жінка</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="city"><b>Місто:</b></label>
+                </td>
+                <td>
+                  <input type="text" id="city" name="city" size="12" required />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="birthday"><b>Дата народження:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    size="10"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="photo"><b>Ваша фотографія:</b></label>
+                </td>
+                <td><input type="file" id="photo" name="photo" required /></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="email"><b>Email:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    size="12"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="password"><b>Пароль:</b></label>
+                </td>
+                <td>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Пароль має містити принаймні одну цифру, одну велику та малу літеру та щонайменше 8 символів"
+                    size="12"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="status"><b>Статус:</b></label>
+                </td>
+                <td>
+                  <textarea
+                    id="status"
+                    name="status"
+                    placeholder="Про що ви думаєте?"
+                    rows="5"
+                    cols="30"
+                  ></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="profile-color"
+                    ><b>Оберіть колір вашого профілю:</b></label
+                  >
+                </td>
+                <td>
+                  <input
+                    type="color"
+                    id="profile-color"
+                    name="profile-color"
+                    value="#ffffff"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <br />
+
+        <!-- Finding a partner -->
+        <section class="interests-section">
+          <h3>Крок 2: Допоможи нам знайти ідеального партнера для тебе</h3>
+
+          <br />
+
+          <!-- Perfect date -->
+          <div>
+            <label for="perfect-date"><b>Ідеальне побачення:</b></label>
+            <select id="perfect-date" name="perfect-date">
+              <option value="romantic-dinner">Романтична вечеря</option>
+              <option value="recreation">Активний відпочинок</option>
+              <option value="master-class">Творчий майстер-клас</option>
+              <option value="walking">Прогулянка містом</option>
+            </select>
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Tastes -->
+          <div>
+            <label><b>Що ти обереш?</b></label>
+
+            <br />
+            <br />
+
+            <input
+              type="radio"
+              id="restaurant"
+              name="dinner"
+              value="restaurant"
+            />
+            <label for="restaurant">вечеря в дорогому ресторані</label>
+
+            <br />
+
+            <input type="radio" id="delivery" name="dinner" value="delivery" />
+            <label for="delivery">доставка піци</label>
+
+            <br />
+            <br />
+
+            <input type="radio" id="riding" name="activity" value="riding" />
+            <label for="riding">кінна прогулянка</label>
+
+            <br />
+
+            <input
+              type="radio"
+              id="climbing"
+              name="activity"
+              value="climbing"
+            />
+            <label for="climbing">скелелазіння</label>
+
+            <br />
+            <br />
+
+            <input type="radio" id="cooking" name="art" value="cooking" />
+            <label for="cooking">кулінарний майстер-клас</label>
+
+            <br />
+
+            <input type="radio" id="pottery" name="art" value="pottery" />
+            <label for="pottery">гончарство</label>
+
+            <br />
+            <br />
+
+            <input type="radio" id="on-foot" name="tourism" value="on-foot" />
+            <label for="on-foot">піша прогулянка</label>
+
+            <br />
+
+            <input type="radio" id="bike" name="tourism" value="bike" />
+            <label for="bike">велосипед</label>
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Interests -->
+          <div>
+            <label><b>Інтереси:</b></label>
+            <br />
+            <br />
+            <input type="checkbox" id="sport" name="sport" value="sport" />
+            <label for="sport">Спорт</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="photography"
+              name="photography"
+              value="photography"
+            />
+            <label for="photography">Фотографія</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="painting"
+              name="painting"
+              value="painting"
+            />
+            <label for="painting">Малювання</label>
+
+            <br />
+
+            <input type="checkbox" id="poetry" name="poetry" value="poetry" />
+            <label for="poetry">Поезія</label>
+
+            <br />
+
+            <input type="checkbox" id="music" name="music" value="music" />
+            <label for="music">Музика</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="dancing"
+              name="dancing"
+              value="dancing"
+            />
+            <label for="dancing">Танці</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="cookery"
+              name="cookery"
+              value="cookery"
+            />
+            <label for="cookery">Кулінарія</label>
+
+            <br />
+
+            <input type="checkbox" id="games" name="games" value="games" />
+            <label for="games">Комп'ютерні ігри</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="languages"
+              name="languages"
+              value="languages"
+            />
+            <label for="languages">Вивчення мов</label>
+          </div>
+        </section>
+
+        <br />
+
+        <!-- Confirm registration -->
+        <section class="confirm-section">
+          <input type="checkbox" id="agreement" name="agreement" required />
+          <label for="agreement">
+            <small>Я погоджуюсь з обробкою персональних даних</small>
+          </label>
+
+          <br />
+          <br />
+
+          <button type="submit">Зареєструватися</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
