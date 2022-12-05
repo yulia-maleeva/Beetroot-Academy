@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+    />
+    <title>Dinner Shopping List</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Dinner Shopping List</h1>
+      <h3>Let’s go to the mall!</h3>
+    </header>
+
+    <main>
+      <section class="shopping-list">
+        <form action="" method="post">
+          <ul>
+            <li class="item">
+              <input
+                type="checkbox"
+                id="pickles"
+                name="pickles"
+                value="pickles"
+              />
+              <label for="pickles">
+                <span class="main-txt">A lot of pickles </span>
+                <span class="extra-txt">for the next lessons about CSS</span>
+              </label>
+            </li>
+
+            <li class="item">
+              <input type="checkbox" id="apples" name="apples" value="apples" />
+              <label for="apples">
+                <span class="main-txt">10 apples </span>
+                <span class="extra-txt">for more CSS manipulations</span>
+              </label>
+            </li>
+
+            <li class="item">
+              <input
+                type="checkbox"
+                id="oranges"
+                name="oranges"
+                value="oranges"
+              />
+              <label for="oranges">
+                <span class="main-txt">20 oranges </span>
+                <span class="extra-txt">because they are awesome</span>
+              </label>
+            </li>
+
+            <li class="item">
+              <input type="checkbox" id="plates" name="plates" value="plates" />
+              <label for="plates">
+                <span class="main-txt">13 plates </span>
+                <span class="extra-txt"
+                  >hm... they always dissapear</span
+                ></label
+              >
+            </li>
+
+            <li class="item">
+              <input type="checkbox" id="bentos" name="bentos" value="bentos" />
+              <label for="bentos">
+                <span class="main-txt">15 bentos</span>
+              </label>
+            </li>
+
+            <li class="item">
+              <input type="checkbox" id="sake" name="sake" value="sake" />
+              <label for="sake">
+                <span class="main-txt">1 bottle of Sake </span>
+                <span class="extra-txt">for my friends</span>
+              </label>
+            </li>
+          </ul>
+
+          <button type="submit">Bon appetit :)</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    transition: all .1s ease-in;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #3B3F45;
+    color: #FFFFFF; 
+}
+
+h1, h3, button {
+    color: #FF8984;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 4px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+header {
+    background-color: #4A4F56;
+    padding: 19px 0 12px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopping-list {
+    width: 534px;
+    margin: auto;
+}
+
+.item {
+    background-color: #88839E;
+    padding: 12px;
+}
+
+.item:nth-child(even) {
+    background-color: #7A7593;
+}
+
+.item:hover {
+    background-color: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.item:active {
+    background-color: #FF8984;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    accent-color: white;
+    vertical-align: middle;
+}
+
+.main-txt {
+    font-size: 18px;
+    line-height: 21px;
+    vertical-align: middle;
+}
+
+.extra-txt {
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.extra-txt::before {
+    content: "(";
+}
+
+.extra-txt::after {
+    content: ")";
+}
+
+input[type="checkbox"]:checked + label > span {
+    text-decoration: line-through;
+    color: #9b96ac;
+  }
+
+button {
+    border: none;
+    background: #4A4F56;
+    width: 534px;
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 45px;
+}
