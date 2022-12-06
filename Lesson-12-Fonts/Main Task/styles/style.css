@@ -1,0 +1,95 @@
+/*General styles*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+}
+
+header, main {
+    width: 1200px;
+    margin: auto;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 13px;
+}
+
+.language {
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+}
+
+nav, a {
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #000000;
+}
+
+figure {
+    margin-left: auto;
+}
+
+/*Main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+
+h2 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+sup {
+    font-family: 'Farro', sans-serif;
+    font-size: small;
+    letter-spacing: 0.04em;
+    vertical-align: 50%;
+    text-transform: none;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.big-paragraph {
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.extra {
+    background-color: lightgray;
+}

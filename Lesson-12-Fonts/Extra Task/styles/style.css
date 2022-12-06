@@ -1,0 +1,205 @@
+/*General styles*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+
+.central-block {
+  width: 970px;
+  margin: auto;
+}
+
+#about-me,
+#portfolio {
+  background: #f6f6f6;
+}
+
+nav,
+#about-me,
+#skills,
+#portfolio,
+#contacts {
+  text-align: center;
+}
+
+.light-txt {
+  font-size: 14px;
+  line-height: 19px;
+  color: #828282;
+}
+
+h2 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+/*Header with navigation menu*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 1px solid #828282;
+}
+
+nav a {
+  font-family: "Gilroy-Bold", sans-serif;
+  text-decoration: none;
+  line-height: 22px;
+  color: #828282;
+}
+
+/*Main block*/
+/*Section "Home"*/
+
+#home {
+  margin-bottom: 105px;
+}
+
+.central-block.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.extra-txt {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.language {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*Section "About me"*/
+
+.central-block.introduction {
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/*Section "Skills*/
+
+.central-block.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 110px;
+}
+
+.note {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-txt.bold {
+  font-family: "Gilroy-Bold", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+/*Section "Portfolio"*/
+
+.central-block.portfolio {
+  padding: 115px 0 100px 0;
+}
+
+.portfolio-block {
+  margin-top: 50px;
+}
+
+.project-link a {
+  line-height: 22px;
+  color: #070707;
+}
+
+.project-link {
+  margin-top: 45px;
+  margin-bottom: 100px;
+}
+
+.project-link.no-margin {
+  margin-bottom: 0;
+}
+
+/*Footer with contacts*/
+
+.central-block.contacts {
+  margin-top: 115px;
+  margin-bottom: 125px;
+}
+
+.final-note {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 85px;
+  margin-bottom: 45px;
+}
+
+button {
+  font-family: "Gilroy-Medium", sans-serif;
+  padding: 10px 16px;
+  background-color: #070707;
+  border-radius: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.light-txt a {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 17px;
+  color: #828282;
+}
