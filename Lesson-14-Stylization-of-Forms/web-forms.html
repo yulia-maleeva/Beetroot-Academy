@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/536cf02985.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Web-Forms</title>
+  </head>
+  <body>
+    <!--Create an Account-->
+    <div class="container">
+      <h2>Create an Account</h2>
+      <form action="" class="form-container">
+        <div class="main-group">
+          <div class="group">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="input-field"
+              autofocus
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-field"
+            required
+          />
+          <p class="extra-txt">
+            We'll never share your email with anyone else.
+          </p>
+        </div>
+
+        <div class="radio-group">
+          <div>
+            <input type="radio" name="gender" value="male" id="male" checked />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="main-group">
+          <div class="group select-wrapper">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="select">Select</option>
+            </select>
+          </div>
+
+          <div class="group">
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+
+        <p class="extra-txt center">
+          By clicking the 'Sign Up' button, you confirm that you accept our
+          <a href="" class="link">Terms of Use</a> and
+          <a href="" class="link">Privacy Policy</a>
+        </p>
+      </form>
+
+      <div class="extra-container">
+        <p>Have an account?</p>
+        <a href="" class="extra-link">Log In</a>
+      </div>
+    </div>
+
+    <!--Profile-->
+    <div class="container">
+      <h2>Profile</h2>
+      <form action="" class="form-container">
+        <div class="image-group">
+          <div class="image">
+            <img src="assets/images/avatar.png" alt="avatar" title="avatar" />
+          </div>
+          <div class="download-image">
+            <div class="btn-group">
+              <div class="btn-wrapper">
+                <input type="file" name="file" id="file" class="input-file" />
+                <label for="file" class="file-btn">
+                  <div class="custom-file-btn">
+                    <i class="fa-solid fa-camera photo"></i>
+                  </div>
+                </label>
+              </div>
+
+              <div class="btn-wrapper">
+                <input
+                  type="reset"
+                  name="reset"
+                  id="reset"
+                  class="input-reset"
+                />
+                <label for="reset" class="reset-btn">
+                  <div class="custom-reset-btn">
+                    <i class="fa-solid fa-trash trash"></i>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <p class="extra-txt">Up to 1 MB (300x300 px)</p>
+          </div>
+        </div>
+
+        <div class="main-group">
+          <div class="group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="mail">E-mail</label>
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="main-group">
+          <div class="group select-wrapper">
+            <label for="homeland">Country</label>
+            <select id="homeland" name="homeland" required>
+              <option value="select">Select</option>
+            </select>
+          </div>
+          <div class="group">
+            <label for="town">City</label>
+            <input
+              type="text"
+              id="town"
+              name="town"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="main-group">
+          <div class="group">
+            <label for="zip-code">Zip Code</label>
+            <input
+              type="text"
+              id="zip-code"
+              name="zip-code"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="input-field"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn small">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
