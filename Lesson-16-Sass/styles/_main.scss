@@ -1,0 +1,104 @@
+/*General*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include flex(column, center, center);
+  min-height: 100vh;
+  height: $max;
+  gap: 40px;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+  @include font(18px, 500, $light-grey, true);
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  @include font(60px, 900, $gold, true);
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  @include font(36px, 900, $grey);
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  @include font(24px, 400, $grey);
+}
+
+/*Header*/
+
+.header {
+  @include flex(column);
+  max-width: $max;
+  width: 450px;
+  text-align: center;
+}
+
+/*Main*/
+
+.main-container {
+  @include flex(row, null, null, wrap);
+  width: 1170px;
+  max-width: $max;
+}
+
+.container {
+  @include flex(row, center, center);
+  max-width: $max;
+  flex: 1;
+  padding: 65px 0;
+
+  &.left {
+    border-right: 1px solid $gold;
+  }
+}
+
+.photo {
+  @include photo();
+}
+
+.info {
+  @include flex(column, null, center);
+  width: 430px;
+}
+
+.profile {
+  @include flex(column, null, center);
+  gap: 30px;
+}
+
+.social-media {
+  @include flex(row);
+  gap: 5px;
+
+  a {
+    @include mediaLink();
+  }
+}
+
+.description {
+  font-family: "Raleway", sans-serif;
+  @include font(14px, 500, $dark-grey);
+  line-height: 24px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  @include font(14px, 700, $grey, true);
+  @include flex(null, center, center);
+  width: 118px;
+  height: 24px;
+  border: 1px solid $gold;
+  background-color: transparent;
+  margin-top: 25px;
+}

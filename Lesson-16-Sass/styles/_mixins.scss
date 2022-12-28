@@ -1,0 +1,37 @@
+@mixin flex(
+  $direction: null,
+  $justify-content: null,
+  $align-items: null,
+  $wrap: null
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+
+@mixin font($size, $weight, $color, $transform: false) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  @if $transform {
+    text-transform: uppercase;
+  } @else {
+    text-transform: none;
+  }
+  text-align: center;
+}
+
+@mixin photo {
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 430px;
+  max-height: 430px;
+}
+
+@mixin mediaLink {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
