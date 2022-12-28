@@ -1,0 +1,141 @@
+/*General styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+}
+
+h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/*Header*/
+
+header {
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 2;
+}
+
+.language {
+  font-family: "Tourney", cursive;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+nav,
+a {
+  font-family: "Staatliches", cursive;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
+}
+
+figure {
+  margin-left: auto;
+}
+
+/*Main*/
+
+main {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+
+/*Side Bar*/
+
+.side-bar {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  height: 460px;
+  position: sticky;
+  top: 70px;
+}
+
+.heading {
+  border-bottom: 1px solid #bdbdbd;
+  padding: 0 0 10px 0;
+}
+
+/*Main Container*/
+
+.main-container {
+  width: 785px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 1;
+}
+
+sup {
+  font-family: "Farro", sans-serif;
+  font-size: small;
+  letter-spacing: 0.04em;
+  vertical-align: 50%;
+  text-transform: none;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  line-height: 48px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.extra {
+  background-color: lightgray;
+}
+
+.divider {
+  margin-bottom: 20px;
+}
+
+.bg-image {
+    width: 760px;
+    height: 760px;
+    background-image: url("../assets/images/bg-picture.png");
+    position: fixed;
+    top: 150px;
+    right: -132px;
+}
