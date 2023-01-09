@@ -1,0 +1,501 @@
+/*General styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  @include flexColumn(null, null, 90px);
+  color: $black;
+
+  @include tabletAndMobile {
+    gap: 70px;
+  }
+}
+
+.main-container {
+  max-width: 1170px;
+  width: 100%;
+  @include flexColumn;
+  margin: auto;
+
+  @include tablet {
+    padding: 0 34px;
+  }
+
+  @include mobile {
+    padding: 0 10px;
+  }
+
+  .motto {
+    position: absolute;
+    top: 100px;
+
+    @include tablet {
+      top: 30px;
+    }
+
+    @include mobile {
+      top: 70px;
+    }
+  }
+}
+
+/*Header*/
+
+.header-container {
+  height: 100px;
+  @include flexRow(space-between, center);
+
+  @include tabletAndMobile {
+    height: 60px;
+  }
+}
+
+.navigation {
+  @include flexRow(null, center, 84px);
+}
+
+nav {
+  ul {
+    @include flexRow(null, null, 42px);
+
+    a {
+      @include latoFont(14px, null, null, 0.3em, $black);
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 1px solid $black;
+      }
+    }
+  }
+
+  @include tabletAndMobile {
+    display: none;
+  }
+}
+
+.buttons-group {
+  @include flexRow(null, null, 40px);
+
+  @include mobile {
+    gap: 20px;
+  }
+}
+
+.small-button {
+  @include flexRow(center, center);
+  background-color: transparent;
+  border: none;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.hidden {
+    display: none;
+    @include tabletAndMobile {
+      display: flex;
+    }
+  }
+}
+
+.banner {
+  height: 600px;
+  display: flex;
+  position: relative;
+  background-image: url(../assets/images/background-image.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.motto {
+  @include redHatDisplayFont(48px, 600, 133%, 0.05em);
+}
+
+/*Main*/
+
+.sections {
+  @include flexColumn(null, null, 90px);
+
+  @include tabletAndMobile {
+    gap: 70px;
+  }
+}
+
+section {
+  @include flexColumn(null, null, 50px);
+
+  &.small {
+    @include mobile {
+      gap: 30px;
+    }
+  }
+}
+
+.title {
+  @include redHatDisplayFont(48px, null, 133%, 0.05em);
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.content {
+  display: flex;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.big-gap {
+    gap: 50px;
+  }
+
+  &.small-gap {
+    gap: 30px;
+
+    @include tablet {
+      gap: 20px;
+    }
+
+    @include mobile {
+      gap: 50px;
+    }
+  }
+
+  article {
+    display: flex;
+    flex: 1;
+
+    &.column {
+      flex-direction: column;
+    }
+
+    &.to-column {
+      @include mobile {
+        flex-direction: column;
+
+        &.reverse {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    &.big-gap {
+      gap: 30px;
+
+      @include tablet {
+        gap: 20px;
+      }
+    }
+
+    &.middle-gap {
+      gap: 25px;
+
+      @include tablet {
+        gap: 20px;
+      }
+    }
+
+    &.small-gap {
+      gap: 20px;
+
+      @include mobile {
+        gap: 25px;
+      }
+    }
+  }
+
+  &.blog {
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    article {
+      @include tablet {
+        flex-direction: row;
+
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  &.to-column {
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &.to-site {
+    @include tablet {
+      flex-direction: column;
+      gap: 50px;
+
+      .company-info {
+        text-align: end;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 35px;
+    }
+  }
+}
+
+.part {
+  @include flexColumn;
+  flex: 1;
+
+  &.special {
+    justify-content: center;
+  }
+
+  &.small {
+    align-items: flex-end;
+
+    @include mobile() {
+      align-items: flex-start;
+    }
+  }
+}
+
+.block-image {
+  width: 100%;
+}
+
+.info {
+  @include flexColumn;
+
+  &.small {
+    width: 80%;
+
+    @include tabletAndMobile() {
+      width: 100%;
+    }
+  }
+}
+
+.extra-text {
+  @include latoFont(16px, null, null, 0.1em, $light-grey);
+}
+
+.article-title {
+  @include redHatDisplayFont(23px, 500, 166%, 0.1em);
+
+  &.big-margins {
+    margin: 30px 0 15px 0;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &.middle-margins {
+    margin-top: 25px;
+  }
+
+  &.small-margins {
+    margin-top: 20px;
+
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
+}
+
+.main-text {
+  @include latoFont(16px, null, 166%, 0.05em, $dark-grey);
+
+  &.big-margin-top {
+    margin-top: 50px;
+
+    @include tabletAndMobile {
+      margin-top: 40px;
+    }
+
+     &.small {
+    width: 80%;
+
+    @include tabletAndMobile() {
+      width: 100%;
+    }
+  }
+  }
+
+  &.middle-margin-top {
+    margin-top: 20px;
+  }
+
+  &.small-margin-top {
+    margin-top: 20px;
+    @include mobile {
+      margin-top: 10px;
+    }
+  }
+}
+
+.arrow-button {
+  border: none;
+  background-color: transparent;
+}
+
+.subtitle-block {
+  @include flexRow(space-between);
+
+  @include mobile {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.subtitle {
+  @include redHatDisplayFont(28px, 600, 166%, 0.1em);
+}
+
+.more-button {
+  @include flexRow(null, center, 20px);
+  border: none;
+  background-color: transparent;
+  @include latoFont(16px, null, null, 0.1em, $light-grey);
+}
+
+.extra-block {
+  @include flexRow(space-between);
+}
+
+.big-button {
+  width: 180px;
+  height: 46px;
+  @include flexRow(center, center);
+  border: none;
+  margin: auto;
+  background: $dark-grey;
+  @include latoFont(16px, 700, 166%, 0.1em, $white);
+}
+
+.site-link {
+  @include redHatDisplayFont(23px, null, 166%, 0.1em);
+
+  a {
+    text-decoration: none;
+    color: $black;
+    outline: none;
+  }
+}
+
+.company-info {
+  @include latoFont(19px, null, 168%, 0.05em, $dark-grey);
+
+  @include tablet {
+    text-align: center;
+  }
+
+  &.small {
+    width: 80%;
+  }
+}
+
+/*Footer*/
+
+footer {
+  background-color: #f4f4f4;
+  padding: 70px 0 70px 0;
+
+  @include tabletAndMobile {
+    padding: 50px 0 50px 0;
+  }
+}
+
+.footer {
+  @include flexColumn(null, null, 20px);
+
+  @include tabletAndMobile {
+    gap: 40px;
+  }
+}
+
+.contacts {
+  display: flex;
+
+  @include tabletAndMobile {
+    @include flexColumn(null, null, 40px);
+  }
+}
+
+.contact-info {
+  @include flexColumn(null, null, 30px);
+  flex: 1;
+
+  @include tabletAndMobile {
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+.links {
+  @include flexColumn(null, null, 15px);
+}
+
+.link {
+  @include latoFont(16px, null, 166%, 0.1em, $black);
+  text-decoration: none;
+}
+
+.social-media {
+  @include flexRow(end, center);
+  flex: 1;
+
+  @include tabletAndMobile {
+    justify-content: center;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 23px;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  @include flexRow(center, center);
+  background-color: transparent;
+  border: 1px solid $dark-grey;
+}
+
+.social > a {
+  display: flex;
+  outline: none;
+}
+
+.media {
+  width: 25px;
+  height: 25px;
+  fill: $dark-grey;
+}
+
+.social:hover > a > .media {
+  fill: #ffffff;
+}
+
+.social:hover {
+  background-color: $dark-grey;
+}
+
+.copyright {
+  @include latoFont(12px, null, 166%, 0.1em);
+  background-color: transparent;
+  text-align: center;
+}

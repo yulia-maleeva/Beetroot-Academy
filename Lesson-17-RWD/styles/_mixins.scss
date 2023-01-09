@@ -1,0 +1,73 @@
+/*RWD*/
+
+@mixin tablet() {
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tabletAndMobile() {
+  @include tablet {
+    @content;
+  }
+
+  @include mobile {
+    @content;
+  }
+}
+
+/*FlexBox*/
+
+@mixin flexRow($justify-content: null, $align-items: null, $gap: null) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin flexColumn($justify-content: null, $align-items: null, $gap: null) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+/*Fonts*/
+
+@mixin latoFont(
+  $font-size: null,
+  $font-weight: null,
+  $line-height: null,
+  $letter-spacing: null,
+  $color: null
+) {
+  font-family: "Lato", sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin redHatDisplayFont(
+  $font-size: null,
+  $font-weight: null,
+  $line-height: null,
+  $letter-spacing: null,
+  $color: null
+) {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
